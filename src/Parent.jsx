@@ -8,13 +8,15 @@ export default function Parent() {
       <h1>*Parent*</h1>
       <h2>Count: {Count}</h2>
       <button
-        onClick={() => setCount(Count + 1)}
-        className="btn btn-outline-danger mb-2"
+        onClick={() => {
+          setCount(Count + 1);
+        }}
+        className="btn btn-outline-success mb-2"
       >
-        increase
+        +
       </button>
       <div className="p-4 bg-warning">
-        <Child count={Count} />
+        <Child count={Count} setCount={setCount} />
       </div>
     </div>
   );
