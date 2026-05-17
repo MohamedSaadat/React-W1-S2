@@ -4,6 +4,7 @@ import Binding from "./Binding.jsx";
 import UseState from "./UseState.jsx";
 import UseStateEX from "./UseStateEX.jsx";
 import Parent from "./Parent.jsx";
+import Products from "./Products.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,8 @@ export default function App() {
       <UseStateEX />
       <hr />
       <Parent />
+      <hr />
+      <Products />
     </>
   );
 }
